@@ -7,10 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<ul>
-  <li><%=link_to 'Cadastre-se', signup_path %></li>
-</ul>
-<%= yield %>
+  <header>
+    <nav>
+      <%= render 'layouts/menu' %>
+    </nav>
+  </header>
+
+  <%= yield %>
 
 </body>
 </html>

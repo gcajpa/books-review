@@ -13,6 +13,27 @@ end
 class ActionDispatch::IntegrationTest
   # Make the Capybara DSL available in all integration tests
   include Capybara::DSL
+
+  def t(*args)
+    I18n.t(*args)
+  end
+
+  def label(scope)
+    t(scope, scope: 'labels')
+  end
+
+  def button(scope)
+    t(scope, scope: 'helpers.submit')
+  end
+
+  def form_error_message()
+    t('form_error_message')
+  end
+
+  def flash(scope)
+    t(scope, 'flash.signup')
+  end
+
   teardown do
     Capybara.reset_sessions!
   end

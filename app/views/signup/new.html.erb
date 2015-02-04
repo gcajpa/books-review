@@ -1,7 +1,7 @@
 <h1>Singup</h1>
 
 <% if @user.errors.any? %>
-  Verifique o formulário antes de enviar!
+  <%= t('form_error_message') %>
   <ul>
     <% @user.errors.full_messages.each do |m| %>
       <li> <%= m %> </li>
@@ -11,23 +11,23 @@
 
 <%= form_for @user, url: signup_path do |f|  %>
   <div>
-    <%= f.label :name, 'Seu nome' %>
+    <%= f.label :name, t('labels.user.name') %>
     <%= f.text_field :name %>
   </div>
   <div>
-    <%= f.label :email, 'Seu email' %>
+    <%= f.label :email, t('labels.user.email') %>
     <%= f.text_field :email %>
   </div>
   <div>
-    <%= f.label :password, 'Sua senha' %>
+    <%= f.label :password, t('labels.user.password') %>
     <%= f.password_field :password %>
   </div>
   <div>
-    <%= f.label :password_confirmation, 'Confirme sua senha' %>
+    <%= f.label :password_confirmation, t('labels.user.password_confirmation') %>
     <%= f.password_field :password_confirmation %>
   </div>
 
   <div>
-    <%= f.submit 'Quero me cadastrar' %>
+    <%= f.submit %>
   </div>
 <% end %>

@@ -1,0 +1,5 @@
+pt-BR:
+  flash:
+    signup:
+      create:
+        notice: Your accout has been created!

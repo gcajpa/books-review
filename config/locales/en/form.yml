@@ -1,0 +1,13 @@
+pt-BR:
+  form_error_message: Verifique o formulário antes de enviar!
+  labels:
+    user:
+      name: 'Your name'
+      email: 'Your email addresse'
+      password: 'Your Password'
+      password_confirmation: 'Confirm your password'
+  helpers:
+    submit:
+      user:
+        create: 'Create my account!'
+        update: 'Update my profile!'
