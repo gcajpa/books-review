@@ -1,0 +1,33 @@
+<h1>Singup</h1>
+
+<% if @user.errors.any? %>
+  Verifique o formulário antes de enviar!
+  <ul>
+    <% @user.errors.full_messages.each do |m| %>
+      <li> <%= m %> </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @user, url: signup_path do |f|  %>
+  <div>
+    <%= f.label :name, 'Seu nome' %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :email, 'Seu email' %>
+    <%= f.text_field :email %>
+  </div>
+  <div>
+    <%= f.label :password, 'Sua senha' %>
+    <%= f.password_field :password %>
+  </div>
+  <div>
+    <%= f.label :password_confirmation, 'Confirme sua senha' %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <%= f.submit 'Quero me cadastrar' %>
+  </div>
+<% end %>
