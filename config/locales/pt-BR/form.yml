@@ -11,3 +11,5 @@ pt-BR:
       user:
         create: 'Quero me cadastrar!'
         update: 'Atualizar meus dadaos!'
+      login: 'Acesse sua conta'
+

@@ -24,7 +24,7 @@ class UserTest < ActiveSupport::TestCase
   test "email is valid" do
     %w[
       john@teste.com.br
-      johndoe@dominio.com.br
+      johndoe@dominio.com.org
       john.doe@dominio.com.br
       john_doe@dominio.com.br
       JOHN@dominio.com.br
@@ -34,14 +34,8 @@ class UserTest < ActiveSupport::TestCase
     end
   end
   test "email must be unique" do
-    user = User.create!(
-      name: "John",
-      email: "john@teste.com.br",
-      password: "123456",
-      password_confirmation: "123456"
-    )
-    another_user = user.dup
-    another_user.save
+    user = create(:user)
+    another_user = User.create(email: user.email)
     assert another_user.errors[:email].any?
   end
 end

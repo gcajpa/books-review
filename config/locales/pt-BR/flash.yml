@@ -3,3 +3,4 @@ pt-BR:
     signup:
       create:
         notice: Cadastro realizado com sucesso!
+    must_be_logged_in: O usuário deve está logado!
