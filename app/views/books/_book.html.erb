@@ -1,0 +1,9 @@
+<li class="<%= book.status %>">
+  <%= check_box_tag 'book_ids[]', book.id, book.completed_at?, id: dom_id(book) %>
+  <label for="<%= dom_id(book) %>"><%= book.title %></label>
+
+  <span class="actions">
+    <%= link_to t('actions.edit'), edit_book_path(book) %>
+    <%= link_to t('actions.remove'), delete_book_path(book) %>
+  </span>
+</li>

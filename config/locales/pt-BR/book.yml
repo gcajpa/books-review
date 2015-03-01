@@ -1,0 +1,9 @@
+pt-BR:
+  books:
+    no_book: 'Você não possui livros cadastrados!'
+    removal_disclaimer_html: |
+      Tem certeza que deseja remover o livro <strong>%{title}</strong>?
+      <br>
+      Não será possível desfazer esta ação.
+
+    confirm_removal: 'Sim, quero remover este livro!'

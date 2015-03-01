@@ -3,5 +3,6 @@ pt-BR:
     signup:
       create:
         notice: Your accout has been created!
-  login:
-    alert: 'Login is required'
+    login:
+      create:
+        alert: 'Email / Password invalid'

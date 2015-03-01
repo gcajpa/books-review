@@ -14,5 +14,5 @@ class User < ActiveRecord::Base
   validates_format_of :email, with: FORMAT_EMAIL
   validates_uniqueness_of :email
   validates_confirmation_of :password
-
+  has_many :books
 end

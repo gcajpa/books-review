@@ -5,11 +5,21 @@ pt-BR:
       name: 'Seu nome'
       email: 'Seu email'
       password: 'Sua senha'
+      new_password: 'Informe sua nova senha'
       password_confirmation: 'Confirme sua senha'
+    book:
+      title: 'Título da tarefa'
+      review: 'Review'
   helpers:
     submit:
       user:
         create: 'Quero me cadastrar!'
         update: 'Atualizar meus dadaos!'
+      book:
+        create: 'Inserir'
+        update: 'Atualizar'
       login: 'Acesse sua conta'
+      update_all: 'Salvar'
+      password_reset:
+        create: 'Salvar nova senha'
 

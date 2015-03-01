@@ -28,12 +28,17 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'rails-i18n'
 gem 'rails-env'
-
+gem 'sucker_punch'
+gem 'premailer-rails'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :development do
+  gem "letter_opener"
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,10 +51,13 @@ group :development, :test do
   gem 'spring'
 
   gem 'pry-meta', '~> 0.0.10'
+
+  gem 'dotenv-rails'
 end
 
 group :test do
   gem 'capybara'
   gem 'factory_girl'
+  gem 'simplecov', :require => false
 end
 

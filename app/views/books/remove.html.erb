@@ -1,0 +1,7 @@
+<p>
+  <%= t('books.removal_disclaimer_html', title: @book.title) %>
+</p>
+
+<%= button_to t('books.confirm_removal'), delete_book_path(@book), method: 'delete', class: 'button' %>
+
+<%= link_to t('actions.cancel'), books_path %>

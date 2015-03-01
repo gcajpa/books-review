@@ -1,0 +1,15 @@
+<%= render 'form', url: new_book_path %>
+<% if !@books.blank? %>
+  <%= form_tag edit_books_path do %>
+    <ul class="tasks">
+      <%= render @books %>
+    </ul>
+
+    <div>
+      <%= submit_tag t('helpers.submit.update_all'), class: 'button' %>
+    </div>
+  <% end %>
+
+<% else %>
+  <p><%= t('books.no_book') %></p>
+<% end %>

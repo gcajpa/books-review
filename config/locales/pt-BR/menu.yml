@@ -1,4 +1,5 @@
 pt-BR:
   menu:
-    signin: 'Entrar'
+    login: 'Entrar'
     signup: 'Cadastre-se'
+    signout: 'Sair'

@@ -1,12 +1,12 @@
-<h1>Singup</h1>
-
 <% if @user.errors.any? %>
+<div class="error-messages">
   <%= t('form_error_message') %>
   <ul>
     <% @user.errors.full_messages.each do |m| %>
       <li> <%= m %> </li>
     <% end %>
   </ul>
+</div>
 <% end %>
 
 <%= form_for @user, url: signup_path do |f|  %>
@@ -28,6 +28,6 @@
   </div>
 
   <div>
-    <%= f.submit %>
+    <%= f.submit class: 'button' %>
   </div>
 <% end %>

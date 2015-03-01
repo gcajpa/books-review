@@ -1,10 +1,23 @@
 <nav>
   <% if logged_in? %>
-      <%= t('user.greating', name: current_user.name) %>
-    <% else %>
-      <ul>
-        <li><%=link_to t('menu.signin'), login_path %></li>
-        <li><%=link_to t('menu.signup'), signup_path %></li>
-      </ul>
+    <ul>
+      <li>
+        <%= t('user.greeting', name: current_user.name) %>
+      </li>
+
+      <li>
+        <%= button_to t('menu.logout'), logout_path, method: 'delete' %>
+      </li>
+    </ul>
+  <% else %>
+    <ul>
+      <li>
+        <%= link_to t('menu.signup'), signup_path %>
+      </li>
+
+      <li>
+        <%= link_to t('menu.login'), login_path %>
+      </li>
+    </ul>
   <% end %>
 </nav>

@@ -1,0 +1,15 @@
+<%= form_for @book, url: url do |f| %>
+  <div class="book-form">
+    <div>
+      <%= f.label :title, t('labels.book.title') %>
+      <%= f.text_field :title, placeholder: "título do livro..." %>
+    </div>
+    <div>
+      <%= f.label :review, t('labels.book.review')%>
+      <%= f.text_area :review %>
+    </div>
+    <div>
+      <%= f.submit class: 'button' %>
+    </div>
+  </div>
+<% end %>

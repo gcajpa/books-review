@@ -6,8 +6,13 @@ pt-BR:
       email: 'Your email addresse'
       password: 'Your Password'
       password_confirmation: 'Confirm your password'
+    book:
+      title: 'Título do Livro'
   helpers:
     submit:
       user:
         create: 'Create my account!'
         update: 'Update my profile!'
+      books:
+        create: 'Salvar'
+

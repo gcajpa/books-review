@@ -1,0 +1,14 @@
+<%= form_for @user, url: reset_password_path(token: params[:token]) do |f|  %>
+  <div>
+    <%= f.label :password, t('labels.user.new_password') %>
+    <%= f.password_field :password %>
+  </div>
+  <div>
+    <%= f.label :password_confirmation, t('labels.user.password_confirmation') %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <%= submit_tag t('helpers.submit.password_reset.create'), class: 'button' %>
+  </div>
+<% end %>

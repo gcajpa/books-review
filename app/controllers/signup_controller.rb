@@ -1,14 +1,17 @@
 class SignupController < ApplicationController
+
+  before_action :redirect_user
+
   def new
     @user = User.new
   end
   def create
     @user = User.new user_params
     if @user.save
+      Mailer.welcome(@user.name, @user.email).deliver_later
       redirect_to login_path, notice: t('flash.signup.create.notice')
     else
       render :new
-      #flash.now 'Verifique o formulário antes de enviar!'
     end
   end
 

@@ -5,4 +5,5 @@ pt-BR:
         name: 'Nome'
         email: 'E-mail'
         password: 'Senha'
+        new_password: 'Nova Senha'
         password_confirmation: 'Confirmação da Senha'

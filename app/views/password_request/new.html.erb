@@ -1,0 +1,9 @@
+<%= form_tag request_password_new_path do %>
+  <div>
+    <%= label_tag :email, t('labels.user.email')%>
+    <%= email_field_tag :email %>
+  </div>
+   <div>
+    <%= submit_tag t('forget_password'), class: 'button' %>
+  </div>
+<% end %>

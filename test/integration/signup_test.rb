@@ -13,7 +13,7 @@ class SignupTest < ActionDispatch::IntegrationTest
     click_on button('user.create')
 
     assert_equal login_path, current_path
-    assert page.has_text?('Cadastro realizado com sucesso!')
+    assert page.has_text?(notice('signup.create'))
   end
   test "when providing invalid data" do
     visit root_path

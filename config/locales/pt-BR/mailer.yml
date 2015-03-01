@@ -1,0 +1,10 @@
+pt-BR:
+  mailer:
+    signature: |
+      Atenciosamente,
+      Equipe Book List
+
+    welcome:
+      subject: 'Bem Vindo ao Book List!'
+    forgot_password:
+      subject: 'Recuperação de Senha - Book List'

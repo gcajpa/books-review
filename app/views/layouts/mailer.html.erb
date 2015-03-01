@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <%= stylesheet_link_tag 'mailer', media: 'all'%>
+  </head>
+  <body class="page">
+    <%= yield %>
+    <hr>
+    <%= t('mailer.signature') %>
+  </body>
+</html>

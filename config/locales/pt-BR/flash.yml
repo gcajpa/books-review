@@ -3,4 +3,25 @@ pt-BR:
     signup:
       create:
         notice: Cadastro realizado com sucesso!
+    login:
+      create:
+        alert: 'E-mail / senha inválidos'
+    book:
+      create:
+        notice: 'Livro criado com sucesso!'
+        alert: 'O livro não pode ser criado verifique os campos obrigatórios.'
+      update:
+        notice: 'Livro atualizado com sucesso!'
+      delete:
+        notice: 'Livro removido com sucesso!'
+      batch_update:
+        notice: 'Livros atualizdos!'
     must_be_logged_in: O usuário deve está logado!
+    password_request:
+      create:
+        notice: Acesse seu email para definição da nova senha.
+        alert: Não foi possível encontrar o e-mail informado.
+    password_reset:
+      update:
+        notice: Sua senha foi redefinida.
+        alert: Token inválido.
