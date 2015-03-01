@@ -65,3 +65,4 @@ production:
   database: book-list_production
   username: book-list
   password: <%= ENV['BOOK-LIST_DATABASE_PASSWORD'] %>
+  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>
