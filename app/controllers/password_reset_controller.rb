@@ -4,7 +4,6 @@ class PasswordResetController < ApplicationController
   before_filter :set_user
   def edit
   end
-
   def update
     @user = @user.update(user_params)
     redirect_to login_path, notice: t('flash.password_reset.update.notice')
