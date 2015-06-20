@@ -1,0 +1,18 @@
+en:
+  titles:
+    signup:
+      new: 'Sign up'
+
+    login:
+      new: 'Access your account'
+
+    books:
+      index: 'Your books'
+      edit: 'Edit book'
+      remove: 'Remove book'
+
+    password_request:
+      new: 'Request your password'
+
+    password_reset:
+      edit: 'New password'

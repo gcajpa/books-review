@@ -1,8 +1,9 @@
-pt-BR:
+en:
   activerecord:
     attributes:
       user:
         name: 'Name'
-        email: 'Email'
+        email: 'E-mail'
         password: 'Password'
+        new_password: 'New Password'
         password_confirmation: 'Password confirmation'

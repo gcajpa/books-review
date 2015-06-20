@@ -8,13 +8,13 @@ pt-BR:
       new_password: 'Informe sua nova senha'
       password_confirmation: 'Confirme sua senha'
     book:
-      title: 'Título da tarefa'
+      title: 'Título da livro'
       review: 'Review'
   helpers:
     submit:
       user:
         create: 'Quero me cadastrar!'
-        update: 'Atualizar meus dadaos!'
+        update: 'Atualizar meus dados!'
       book:
         create: 'Inserir'
         update: 'Atualizar'
@@ -22,4 +22,3 @@ pt-BR:
       update_all: 'Salvar'
       password_reset:
         create: 'Salvar nova senha'
-

@@ -1,18 +1,24 @@
-pt-BR:
-  form_error_message: Verify the form!
+en:
+  form_error_message: 'Verify the form before send!'
   labels:
     user:
       name: 'Your name'
-      email: 'Your email addresse'
-      password: 'Your Password'
+      email: 'Your email'
+      password: 'Your password'
+      new_password: 'Inform you new password'
       password_confirmation: 'Confirm your password'
     book:
-      title: 'Título do Livro'
+      title: 'Book title'
+      review: 'Review'
   helpers:
     submit:
       user:
-        create: 'Create my account!'
+        create: 'I wanna sign up!'
         update: 'Update my profile!'
-      books:
-        create: 'Salvar'
-
+      book:
+        create: 'Create'
+        update: 'Update'
+      login: 'Access you profile'
+      update_all: 'Save'
+      password_reset:
+        create: 'Save new password'

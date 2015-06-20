@@ -1,5 +1,5 @@
-pt-BR:
+en:
   menu:
-    signin: 'Signin'
-    signup: 'Signup'
-    logout: 'Sair'
+    login: 'Sign in'
+    signup: 'Sign up'
+    logout: 'Log out'

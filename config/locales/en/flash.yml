@@ -1,8 +1,26 @@
-pt-BR:
+en:
   flash:
     signup:
       create:
-        notice: Your accout has been created!
+        notice: 'Account Cadastro realizado com sucesso!'
     login:
       create:
-        alert: 'Email / Password invalid'
+        alert: 'Invalide E-mail / password'
+    book:
+      create:
+        notice: 'Book created successfully!'
+        alert: "The book can't be created verify the required fields."
+        notice: 'Book updated successfully!'
+      delete:
+        notice: 'Book removed successfully!'
+      batch_update:
+        notice: 'Books updated!'
+    must_be_logged_in: 'User should be logged!'
+    password_request:
+      create:
+        notice: 'Access your email to define you new password.'
+        alert: 'No possible to find you the email.'
+    password_reset:
+      update:
+        notice: 'Your password was redefined.'
+        alert: 'Invalid token.'

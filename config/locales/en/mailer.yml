@@ -1,0 +1,10 @@
+en:
+  mailer:
+    signature: |
+      Regards,
+      Equipe Book List
+
+    welcome:
+      subject: 'Welcome to Book List!'
+    forgot_password:
+      subject: 'Password recover - Book List'

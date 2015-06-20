@@ -1,0 +1,9 @@
+en:
+  books:
+    no_book: "You don't have books!"
+    removal_disclaimer_html: |
+      Are you sure to remove the book <strong>%{title}</strong>?
+      <br>
+      You can not undo this action.
+
+    confirm_removal: 'Yes, I wanna remove this book!'
