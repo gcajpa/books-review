@@ -2,4 +2,4 @@ pt-BR:
   menu:
     login: 'Entrar'
     signup: 'Cadastre-se'
-    signout: 'Sair'
+    logout: 'Sair'
