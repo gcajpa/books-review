@@ -18,6 +18,13 @@ a img {
 
 .logo {
   text-decoration: none;
+  background: image-url('logo.png') no-repeat center center;
+  display: block;
+  width: 200px;
+  height: 42px;
+  float: left;
+  text-indent: -9999px;
+  background-size: 250px;
 }
 
 .page {
@@ -27,13 +34,14 @@ a img {
 header {
   position: relative;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 header h1 {
   display: inline-block;
-  line-height: 60px;
+  line-height: 40px;
   font-family: HelveticaNeue-Light, "Helvetica Neue Light", sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 100;
   border-left: 1px solid #ccc;
   margin: 0;
@@ -44,7 +52,7 @@ header h1 {
 nav {
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 5px;
 }
 
 nav input {
