@@ -7,7 +7,7 @@ pt-BR:
       new: 'Acesse sua conta'
 
     books:
-      index: 'Seus livros'
+      index: "%{name}'s Livros"
       edit: 'Editar livro'
       remove: 'Remover livro'
 

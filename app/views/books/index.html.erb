@@ -1,4 +1,4 @@
-<%= render 'form', url: new_book_path %>
+<%= render 'form', url: new_book_path if current_user %>
 <% if !@books.blank? %>
   <%= form_tag edit_books_path do %>
     <ul class="tasks">
@@ -6,7 +6,7 @@
     </ul>
 
     <div>
-      <%= submit_tag t('helpers.submit.update_all'), class: 'button' %>
+      <%= submit_tag t('helpers.submit.update_all'), class: 'button' if current_user %>
     </div>
   <% end %>
 

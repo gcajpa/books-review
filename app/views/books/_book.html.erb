@@ -1,9 +1,13 @@
 <li class="<%= book.status %>">
-  <%= check_box_tag 'book_ids[]', book.id, book.completed_at?, id: dom_id(book) %>
+  <%= check_box_tag 'book_ids[]',
+      book.id, book.completed_at?,
+      id: dom_id(book) if current_user %>
   <label for="<%= dom_id(book) %>"><%= book.title %></label>
 
   <span class="actions">
-    <%= link_to t('actions.edit'), edit_book_path(book) %>
-    <%= link_to t('actions.remove'), delete_book_path(book) %>
+    <% if current_user %>
+      <%= link_to t('actions.edit'), edit_book_path(book) %>
+      <%= link_to t('actions.remove'), delete_book_path(book) %>
+    <% end %>
   </span>
 </li>

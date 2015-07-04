@@ -7,7 +7,7 @@ en:
       new: 'Access your account'
 
     books:
-      index: 'Your books'
+      index: "%{name}'s Books"
       edit: 'Edit book'
       remove: 'Remove book'
 
