@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require froala_editor.min.js
+//= require plugins/block_styles.min.js
+//= require plugins/colors.min.js
+//= require plugins/font_family.min.js
+//= require plugins/font_size.min.js
+//= require plugins/urls.min.js
 //= require_tree .

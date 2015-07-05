@@ -3,10 +3,6 @@ class BooksController < ApplicationController
   before_action :require_user_logged, except: %w[index]
   before_action :find_book, except: %w[index create batch_update]
 
-  def not_found
-    raise ActionController::RoutingError.new('Not Found')
-  end
-
   def index
     @user = current_user
     unless @user
